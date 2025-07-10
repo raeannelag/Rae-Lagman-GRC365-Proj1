@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@media only screen and (min-width:480px) {
+    html {
+        color: black;
+        background: #e5e4de;
+        font-family: "Playfair", serif;
+        width: 100vw;
+    }
+
+
+    header {
+        margin: 0 auto;
+        text-align: center;
+        height: 30%;
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-weight: 700;
+    }
+
+    #topmenu {
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    a {
+        transition: color 200ms ease-in;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited {
+        color: #5f5f5f;
+    }
+
+    a:hover {
+        color: #fa4e3a;
+    }
+
+    #topmenu a {
+        color: #e5e4de;
+        font-size: 18pt;
+    }
+
+    #logo img {
+        width: 25%;
+        height: auto;
+    }
+
+    h2,
+    h3 {
+        font-family: "Schibsted Grotesk", sans-serif;
+    }
+
+    h2 {
+        font-size: 42pt;
+    }
+
+    h3 {
+        letter-spacing: .2px;
+        font-weight: 600;
+        font-size: 12pt;
+        ;
+        border-bottom: 2px solid gray;
+        margin-bottom: 5px;
+    }
+
+    main {
+        width: 90vw;
+        margin: 0 auto;
+        overflow: scroll;
+    }
+
+    .frontpage {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 2fr 3fr;
+        gap: 20px 20px;
+        height: 1100px;
+        margin-bottom: 80px;
+        overflow: hidden;
+    }
+
+    #cover {
+        grid-area: 1/1/5/2;
+        border: 2pt solid black;
+        max-height: 1100px;
+    }
+
+    .labelbox {
+        grid-area: 1/1/4/2;
+        background: #fa4e3a;
+        width: 75%;
+        height: 150px;
+        padding: 30px;
+        justify-self: end;
+        align-self: end;
+        z-index: 14;
+    }
+
+    .labelbox h2 {
+        font-size: 12pt;
+
+    }
+
+    .labelbox p {
+        font-size: 1.5em;
+    }
+
+    .labelbox a {
+        color: black;
+        font-weight: 800;
+        font-size: 1.4em;
+        font-family: "Schibsted Grotesk", sans-serif;
+        text-decoration: underline;
+    }
+
+    .one {
+        grid-area: 1/2/2/3;
+    }
+
+    .two {
+        grid-area: 2/2/3/3;
+    }
+
+    .three {
+        grid-area: 3/2/4/3;
+    }
+
+    .four {
+        grid-area: 4/2/5/3;
+    }
+
+    .story {
+        display: flex;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+
+    .story div {
+        padding: 15px;
+        font-size: 15pt;
+        border-left: 2px solid black;
+        overflow: scroll;
+    }
+
+    .thumbnail {
+        height: 256px;
+    }
+
+    .headline {
+        font-size: 16pt;
+    }
+
+    .sec {
+        border-bottom: 3pt solid black;
+        margin-bottom: 20px;
+    }
+
+    .blocks {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 380px;
+        grid-auto-flow: row dense;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+        font-size: 12pt;
+    }
+
+    .square {
+        width: 350px;
+        height: 450px;
+        background: #e5e4de;
+        border: 2px solid black;
+    }
+
+    .squarethumb {
+        width: 100%;
+        height: 250px;
+    }
+
+    .blinfo {
+        padding: 10px;
+    }
+
+    .menubutton {
+        width: 180px;
+        height: 40px;
+        background: black;
+        text-align: center;
+        padding: 6px;
+        border-radius: 4px;
+        ;
+    }
+
+
+    #storebanner {
+        display: flex;
+        height: 220px;
+        width: 100%;
+        border: 2px solid black;
+        background: url(assets/lighter.png) white;
+        background-position: top right;
+        background-repeat: no-repeat;
+        padding: 10pt;
+        margin-bottom: 50pt;
+    }
+
+    #storetxt {
+        font-size: 40pt;
+        width: 50%;
+        line-height: 1em;
+    }
+
+    footer {
+        background: black;
+        color: white;
+        height: 80pt;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 30px
+    }
+
+    footer nav {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.five {
+    background: url(https://www.interviewmagazine.com/wp-content/uploads/2025/06/Interview_Issue-561_Summer-2025_Plaqueboymax_3_web-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.six {
+    background: url(https://www.interviewmagazine.com/wp-content/uploads/2025/07/IMG_2057-scaled.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.seven {
+    background: url(https://www.interviewmagazine.com/wp-content/uploads/2025/07/CL-02-scaled-1-e1752124976763-782x616.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.eight {
+    background: url(https://www.interviewmagazine.com/wp-content/uploads/2025/06/Interview_Issue-561_Summer-2025_Dylan-Efron_2_web-scaled.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+
+@media only screen and (max-width:480px) {
+    html {
+        background: #e5e4de;
+        width: 100vw;
+        font-size: 12pt;
+        font-family: "Playfair", serif;
+    }
+
+    header {
+        width: 100vw;
+        text-align: center;
+        height: 60px;
+        z-index: 15;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2pt solid black;
+
+    }
+
+    header nav {
+        display: inline-flex;
+        width: 75%;
+        justify-content: space-around;
+        font-weight: 800;
+        font-family: "Schibsted Grotesk", sans-serif;
+        
+
+    }
+    nav a{
+        font-size:9pt;
+    }
+
+    main {
+        width: 90vw;
+        overflow: hidden;
+        margin: 100px auto;
+    }
+
+    #logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    img {
+        max-width: 480px;
+    }
+
+    #cover {
+        width: 100%;
+    }
+
+    a {
+        color: black;
+    }
+
+    a:active {
+        color: #fa4e3a;
+    }
+
+    h2 {
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-size: 1.7em;
+    }
+
+    .labelbox {
+        font-family: "Schibsted Grotesk", sans-serif;
+        background: #fa4e3a;
+        z-index: 10;
+        padding: 13px;
+    }
+
+    .labelbox p {
+        font-size: 14pt;
+    }
+
+    .labelbox a {
+        font-size: 18pt;
+        font-weight: 600;
+    }
+
+    #mobilecov {
+        border: 2px solid black;
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 15pt;
+    }
+
+    .story {
+        border: 2px solid black;
+        margin-bottom: 15pt;
+    }
+
+    .story div {
+
+        padding: 15px;
+    }
+
+    .story h2 {
+        font-size: 24pt;
+        line-height: 0.9em;
+    }
+
+    .story h3 {
+        border-bottom: 2pt solid grey;
+        margin-bottom: 10px;
+    }
+
+    .story a {
+        text-decoration: none;
+    }
+
+    .thumbnail {
+        width: 100%
+    }
+
+    .sec {
+        font-size: 35pt;
+        border-bottom: 2pt solid black;
+        margin-bottom: 10px;
+    }
+
+    .square {
+        width: 100%;
+
+        background: white;
+        border: 2px solid black;
+        margin-bottom: 10px;
+    }
+
+    .squarethumb {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .blinfo {
+        padding: 15px;
+    }
+
+    .blinfo h2 {
+        font-size: 18pt;
+    }
+    .moreinterviews{
+        width:100%;
+        overflow:scroll;
+    }
+    .six {
+        background: url(assets/gia.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .eight {
+        background: url(assets/dylan.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    footer {
+        border-top: 2px solid black;
+        height: 50px;
+        font-size: 8pt;
+    }
+
+    footer nav {
+        font-size: 14pt;
+        font-family: "Schibsted Grotesk", sans-serif;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
